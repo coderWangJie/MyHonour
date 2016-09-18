@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">移动营销</string>
+
+    <!--
+        文字资源要按一定规则进行管理
+	    (1)常用的字词如"确定"、"取消"、"下一步"等等作为公用模块提取出来
+	    (2)其他文字资源以模块为单位组织
+    -->
+
+    <string name="action_settings">设置</string>
+    <string name="register">马上注册</string>
+    <string name="login">登录</string>
+    <string name="logout">退出登录</string>
+    <string name="confirm">确\t定</string>
+    <string name="cancel">取\t消</string>
+    <string name="next">下一步</string>
+    <string name="submit">提交</string>
+    <string name="index">首页</string>
+    <string name="back">返回</string>
+    <string name="wait">请稍等</string>
+    <string name="home">首页</string>
+    <string name="account">账号：</string>
+    <string name="password">密码：</string>
+    <string name="login_please_input">请输入用户名和密码</string>
+    <string name="login_not_success">用户名或密码错误，请重新输入</string>
+
+
+
+</resources>
