@@ -5,14 +5,13 @@ import android.os.Bundle;
 
 /**
  * 普通基类
- * <p/>
- * WangJ jie581825@yeah.net
- * Created on 2016/9/14
- * Modified:
- * Modified on
+ *
+ * @author WangJ jie581825@yeah.net
+ *         Created on 2016/9/14
+ *         Modified:
+ *         Modified on
  */
 public abstract class BaseActivity extends Activity {
-
 
     /**
      * Activity界面布局ID
@@ -20,6 +19,11 @@ public abstract class BaseActivity extends Activity {
      * @return 布局资源ID
      */
     public abstract int getContentViewId();
+
+    /**
+     *
+     */
+    public abstract void setTitleBar();
 
     /**
      *
@@ -33,13 +37,14 @@ public abstract class BaseActivity extends Activity {
             setContentView(getContentViewId());
         }
 
+        setTitleBar();
         initView();
     }
 
     /**
      *
      */
-    protected void requestHttp(){
+    protected void requestHttp() {
 
     }
 }

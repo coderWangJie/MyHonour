@@ -2,23 +2,42 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wj.myhonour">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".basis.MyHonourApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".test.TestActivity"
+            android:name=".demo.TestActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar">
+            <!--android:theme="@style/Theme.AppCompat.Light.DarkActionBar">--><!-- 用这个theme按钮按下时有阴影效果,但是字母强制大写了！！！ -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".demo.ShowActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".demo.DialogDemoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".demo.VolleyDemoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
     </application>
 
 </manifest>

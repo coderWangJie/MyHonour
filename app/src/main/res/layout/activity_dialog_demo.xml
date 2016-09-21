@@ -20,29 +20,39 @@
             android:paddingRight="15dp">
 
             <Button
-                android:id="@+id/btn_activity"
+                android:id="@+id/btn_1"
                 style="@style/button_long"
-                android:text="Go to ShaowActivity" />
+                android:text="HintDialog1" />
 
             <Button
-                android:id="@+id/btn_dialog"
+                android:id="@+id/btn_2"
                 style="@style/button_long"
-                android:text="Dialog Demo" />
+                android:text="HintDialog2" />
 
             <Button
-                android:id="@+id/btn_volley"
-                style="@style/button_long"
-                android:text="Volley Demo" />
-
-            <!--<Button
                 android:id="@+id/btn_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="AsyncTask" />
-            <ImageView
-                android:id="@+id/img_daiban"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />-->
+                style="@style/button_long"
+                android:text="HintDialog3" />
+
+            <Button
+                android:id="@+id/btn_4"
+                style="@style/button_long"
+                android:text="DecideDialog1" />
+
+            <Button
+                android:id="@+id/btn_5"
+                style="@style/button_long"
+                android:text="DecideDialog2" />
+
+            <Button
+                android:id="@+id/btn_6"
+                style="@style/button_long"
+                android:text="DecideDialog3" />
+
+            <Button
+                android:id="@+id/btn_7"
+                style="@style/button_long"
+                android:text="Bottom PopupDialog" />
         </LinearLayout>
     </ScrollView>
 

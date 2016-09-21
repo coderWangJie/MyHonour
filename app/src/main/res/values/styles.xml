@@ -20,15 +20,48 @@
         <item name="android:backgroundDimAmount">0.5</item>
     </style>
 
+    <!-- layout 根布局 -->
     <style name="layout_root">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#F5F5F5</item>
     </style>
 
+    <!--  -->
     <style name="layout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
-    
+    <!-- 水平分割线 -->
+    <style name="line_separate_horizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#C1B9B9</item>
+    </style>
+
+    <!-- 竖直分隔线 -->
+    <style name="line_separate_vertical">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#C1B9B9</item>
+    </style>
+
+    <!--  -->
+    <style name="textview_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--  -->
+    <style name="button_long">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_button_common</item>
+        <item name="android:textColor">@drawable/selector_text_common</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 </resources>

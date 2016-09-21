@@ -60,4 +60,8 @@ public class LogUtil {
         Log.d(TAG, strBuilder.toString());
     }
 
+    public static void logE(String message) {
+        Log.e(TAG, message);
+    }
+
 }
