@@ -16,7 +16,9 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar">
-            <!--android:theme="@style/Theme.AppCompat.Light.DarkActionBar">--><!-- 用这个theme按钮按下时有阴影效果,但是字母强制大写了！！！ -->
+
+            <!-- android:theme="@style/Theme.AppCompat.Light.DarkActionBar"> -->
+            <!-- 用这个theme按钮按下时有阴影效果,但是字母强制大写了！！！ -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,6 +40,15 @@
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity
+            android:name=".demo.marquee.MarQueeDemo"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".demo.marquee.MarqueeInListViewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
     </application>
 
 </manifest>

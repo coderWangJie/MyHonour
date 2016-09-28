@@ -34,15 +34,14 @@
                 style="@style/button_long"
                 android:text="Volley Demo" />
 
-            <!--<Button
-                android:id="@+id/btn_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="AsyncTask" />
-            <ImageView
+            <Button
+                android:id="@+id/btn_marquee"
+                style="@style/button_long"
+                android:text="跑马灯相关" />
+
+            <!--<ImageView
                 android:id="@+id/img_daiban"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />-->
+                style="@style/button_long" />-->
         </LinearLayout>
     </ScrollView>
 

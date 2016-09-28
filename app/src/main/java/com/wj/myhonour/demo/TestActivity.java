@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.wj.myhonour.R;
+import com.wj.myhonour.demo.marquee.MarQueeDemo;
 
 public class TestActivity extends Activity implements View.OnClickListener {
 
@@ -23,6 +24,8 @@ public class TestActivity extends Activity implements View.OnClickListener {
 
         findViewById(R.id.btn_volley).setOnClickListener(this);
 
+        findViewById(R.id.btn_marquee).setOnClickListener(this);
+
     }
 
     @Override
@@ -36,6 +39,9 @@ public class TestActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btn_volley:
                 VolleyDemoActivity.actionStart(this);
+                break;
+            case R.id.btn_marquee:
+                MarQueeDemo.actionStart(this);
                 break;
         }
     }

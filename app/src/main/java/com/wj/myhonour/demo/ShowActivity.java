@@ -28,6 +28,5 @@ public class ShowActivity extends BaseActivity {
     @Override
     public void initView() {
         TextView tv = (TextView) findViewById(R.id.tv_);
-        tv.setText("This is Show Activity！");
     }
 }

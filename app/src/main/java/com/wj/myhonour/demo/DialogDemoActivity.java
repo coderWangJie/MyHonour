@@ -3,6 +3,7 @@ package com.wj.myhonour.demo;
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
+import android.widget.Toast;
 
 import com.wj.myhonour.R;
 import com.wj.myhonour.basis.BaseActivity;
@@ -52,6 +53,7 @@ public class DialogDemoActivity extends BaseActivity implements View.OnClickList
                 DialogUtil.showHintDialog(this, "提示对话框 2", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        Toast.makeText(DialogDemoActivity.this, "自定义对话框响应事件", Toast.LENGTH_SHORT).show();
                         DialogUtil.dismissDialog();
                     }
                 });

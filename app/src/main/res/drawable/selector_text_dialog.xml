@@ -3,7 +3,7 @@
     <item android:color="#444644"
         android:state_enabled="false"/>
 
-    <item android:color="#171817"
+    <item android:color="#282928"
         android:state_enabled="true"
         android:state_pressed="false"/>
 

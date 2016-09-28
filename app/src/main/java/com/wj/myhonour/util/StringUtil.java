@@ -41,7 +41,7 @@ public class StringUtil {
      */
     public static String formatMoneyForRequest(String moneyStr) {
         if (!isEmpty(moneyStr)) {
-            StringBuffer sb = new StringBuffer(moneyStr);
+            StringBuilder sb = new StringBuilder(moneyStr);
             int lp = sb.lastIndexOf(",");
             while (0 < lp) {
                 sb.delete(lp, lp + 1);
