@@ -20,6 +20,11 @@
             android:paddingRight="15dp">
 
             <Button
+                android:id="@+id/btn_toast"
+                style="@style/button_long"
+                android:text="自定义单一Toast" />
+
+            <Button
                 android:id="@+id/btn_activity"
                 style="@style/button_long"
                 android:text="Go to ShaowActivity" />
@@ -39,9 +44,10 @@
                 style="@style/button_long"
                 android:text="跑马灯相关" />
 
-            <!--<ImageView
-                android:id="@+id/img_daiban"
-                style="@style/button_long" />-->
+            <Button
+                android:id="@+id/btn_menu"
+                style="@style/button_long"
+                android:text="Menu相关" />
         </LinearLayout>
     </ScrollView>
 
