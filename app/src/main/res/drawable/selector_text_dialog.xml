@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 对话框按钮文字点击变色样式 -->
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="#444644"
-        android:state_enabled="false"/>
+    <item
+        android:state_enabled="false"
+        android:color="#444644"/>
 
-    <item android:color="#282928"
+    <item
         android:state_enabled="true"
-        android:state_pressed="false"/>
+        android:state_pressed="false"
+        android:color="#282928"/>
 
-    <item android:color="#ECDA74"
+    <item
         android:state_enabled="true"
-        android:state_pressed="true"/>
+        android:state_pressed="true"
+        android:color="#ECDA74"/>
 </selector>

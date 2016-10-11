@@ -24,7 +24,7 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
 
         setTitleWithId(R.string.test);
 
-        setTitleRight(R.drawable.flower, new View.OnClickListener() {
+        setTitleRight(R.drawable.ic_flower, new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

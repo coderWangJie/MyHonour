@@ -111,7 +111,7 @@ public class MarqueeInListViewActivity extends BaseActivity {
             }
 
             HashMap<String, String> map = list.get(position);
-            holder.imgLogo.setImageResource(R.drawable.flower);
+            holder.imgLogo.setImageResource(R.drawable.ic_flower);
             holder.tvTitle.setText(map.get("title"));
             holder.tvContent.setText(map.get("content"));
             if (position == index) {

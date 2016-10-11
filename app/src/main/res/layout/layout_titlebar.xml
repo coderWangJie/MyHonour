@@ -23,7 +23,7 @@
                 android:layout_width="20dp"
                 android:layout_height="20dp"
                 android:contentDescription="@null"
-                android:src="@drawable/ic_back" />
+                android:src="@drawable/ic_go_back" />
 
             <TextView
                 android:id="@+id/tv_titleLeft"

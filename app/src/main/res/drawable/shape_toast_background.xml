@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- 自定义Toast文字显示区域的背景 -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <!--<solid android:color="#55168452" />-->
     <solid android:color="#905f85c2" />

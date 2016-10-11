@@ -16,7 +16,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:contentDescription="@null"
-        android:src="@drawable/ico_selected_1"
+        android:src="@drawable/ic_selected"
         android:visibility="invisible" />
 
     <LinearLayout

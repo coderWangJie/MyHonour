@@ -135,7 +135,7 @@ public class VolleyDemoActivity extends BaseActivity implements View.OnClickList
         ImageLoader.ImageListener listener = ImageLoader.getImageListener(
                 (ImageView) findViewById(R.id.img_loader),
                 R.mipmap.ic_launcher,
-                R.drawable.flower);
+                R.drawable.ic_flower);
         imageLoader.get("http://img1.imgtn.bdimg.com/it/u=367740859,2357929488&fm=21&gp=0.jpg",
                 listener,
                 200, 200);
