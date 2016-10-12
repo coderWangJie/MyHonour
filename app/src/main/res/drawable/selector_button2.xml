@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通用按钮点击样式 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:topRightRadius="20dp"
+                android:bottomLeftRadius="20dp"/>
+            <stroke android:width="0.5dp"
+                android:color="#856715"
+                android:dashGap="0dp"
+                android:dashWidth="1dp" />
+            <solid android:color="#A6A7A6" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape>
+            <corners android:topRightRadius="20dp"
+                android:bottomLeftRadius="20dp" />
+            <stroke android:width="0.5dp"
+                android:color="#856715"
+                android:dashGap="0dp"
+                android:dashWidth="1dp" />
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <corners android:topRightRadius="20dp"
+                android:bottomLeftRadius="20dp" />
+            <stroke android:width="0.5dp"
+                android:color="#856715"
+                android:dashGap="0dp"
+                android:dashWidth="1dp" />
+            <solid android:color="#DEC183" />
+        </shape>
+    </item>
+</selector>

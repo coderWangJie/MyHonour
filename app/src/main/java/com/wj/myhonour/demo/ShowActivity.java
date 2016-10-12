@@ -2,7 +2,6 @@ package com.wj.myhonour.demo;
 
 import android.content.Context;
 import android.content.Intent;
-import android.widget.TextView;
 
 import com.wj.myhonour.R;
 import com.wj.myhonour.basis.BaseActivity;
@@ -27,6 +26,6 @@ public class ShowActivity extends BaseActivity {
 
     @Override
     public void initView() {
-        TextView tv = (TextView) findViewById(R.id.tv_);
+
     }
 }

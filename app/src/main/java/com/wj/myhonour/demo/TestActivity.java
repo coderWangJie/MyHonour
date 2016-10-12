@@ -1,10 +1,12 @@
 package com.wj.myhonour.demo;
 
+import android.content.Intent;
 import android.view.View;
 
 import com.wj.myhonour.R;
 import com.wj.myhonour.basis.BaseActivity;
 import com.wj.myhonour.demo.marquee.MarQueeDemo;
+import com.wj.myhonour.info.UserInfo;
 
 public class TestActivity extends BaseActivity implements View.OnClickListener {
 
@@ -15,13 +17,6 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void setTitleBar() {
-        setTitleLeft("返回", new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                toast("点击了“返回”按钮");
-            }
-        });
-
         setTitleWithId(R.string.test);
 
         setTitleRight(R.drawable.ic_flower, new View.OnClickListener() {
@@ -34,22 +29,34 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void initView() {
-        findViewById(R.id.btn_toast).setOnClickListener(this);
+            findViewById(R.id.btn_login).setOnClickListener(this);
 
-        findViewById(R.id.btn_activity).setOnClickListener(this);
+            findViewById(R.id.btn_toast).setOnClickListener(this);
 
-        findViewById(R.id.btn_dialog).setOnClickListener(this);
+            findViewById(R.id.btn_activity).setOnClickListener(this);
 
-        findViewById(R.id.btn_volley).setOnClickListener(this);
+            findViewById(R.id.btn_dialog).setOnClickListener(this);
 
-        findViewById(R.id.btn_marquee).setOnClickListener(this);
+            findViewById(R.id.btn_volley).setOnClickListener(this);
 
-        findViewById(R.id.btn_menu).setOnClickListener(this);
+            findViewById(R.id.btn_marquee).setOnClickListener(this);
+
+            findViewById(R.id.btn_menu).setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_login:
+                if(UserInfo.isLogin()){
+                    toast("已经登录了");
+                } else {
+                    Intent intent = new Intent(this, LoginActivity.class);
+                    startActivity(intent);
+                    overridePendingTransition(R.anim.activity_in_right, R.anim.activity_out_left);
+                }
+                break;
             case R.id.btn_toast:
                 toast("随机数：" + Math.random() * 10000);
                 break;
@@ -71,4 +78,12 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
         }
     }
 
+    /**
+     * 重写Back键响应，在MainActivity中点击Back键退出
+     */
+    @Override
+    public void onBackPressed() {
+        UserInfo.logout();
+        finish();
+    }
 }

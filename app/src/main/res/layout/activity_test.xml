@@ -20,6 +20,11 @@
             android:paddingRight="15dp">
 
             <Button
+                android:id="@+id/btn_login"
+                style="@style/button_long"
+                android:text="登录" />
+
+            <Button
                 android:id="@+id/btn_toast"
                 style="@style/button_long"
                 android:text="自定义单一Toast" />
