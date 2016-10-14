@@ -4,7 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
-import com.wangj.androidannotations.IndexActivity;
+import com.wangj.abouteventbus.scene2.MessageIndexActivity;
+import com.wangj.androidannotations.FirstActivity;
 import com.wj.myhonour.R;
 import com.wj.myhonour.basis.BaseActivity;
 
@@ -51,12 +52,13 @@ public class FrameIndexActivity extends BaseActivity implements View.OnClickList
                 break;
 
             case R.id.btn_AndroidAnnotation:
-                intent.setClass(this, IndexActivity.class);
+                intent.setClass(this, FirstActivity.class);
                 startActivity(intent);
                 break;
 
             case R.id.btn_EventBus:
-                // TODO
+                intent.setClass(this, MessageIndexActivity.class);
+                startActivity(intent);
                 break;
         }
 

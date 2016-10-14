@@ -1,1 +1,1 @@
-include ':app', ':AndroidAnnotations'
+include ':app', ':AndroidAnnotations', ':AboutEventBus'
