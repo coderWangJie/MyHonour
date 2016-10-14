@@ -1,9 +1,9 @@
 package com.wangj.androidannotations;
 
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
 import android.os.Bundle;
 
-public class IndexActivity extends AppCompatActivity {
+public class IndexActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

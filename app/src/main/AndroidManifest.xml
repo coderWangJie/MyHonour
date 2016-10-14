@@ -64,7 +64,8 @@
             android:name=".demo.developframe.FrameIndexActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+            android:theme="@android:style/Theme.Light.NoTitleBar" />
+        <activity android:name=".demo.developframe.ButterKnifeActivity"></activity>
     </application>
 
 </manifest>

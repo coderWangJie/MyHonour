@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
-import com.wangj.butterknife.ButterKnifeActivity;
+import com.wangj.androidannotations.IndexActivity;
 import com.wj.myhonour.R;
 import com.wj.myhonour.basis.BaseActivity;
 
@@ -27,7 +27,9 @@ public class FrameIndexActivity extends BaseActivity implements View.OnClickList
 
     @Override
     public void initView() {
-        findViewById(R.id.btn_ButterKnife).setOnClickListener(this);
+        findViewById(R.id.btn_ButterKnife1).setOnClickListener(this);
+
+        findViewById(R.id.btn_ButterKnife2).setOnClickListener(this);
 
         findViewById(R.id.btn_AndroidAnnotation).setOnClickListener(this);
 
@@ -39,13 +41,17 @@ public class FrameIndexActivity extends BaseActivity implements View.OnClickList
         Intent intent = new Intent();
         switch (v.getId()) {
 
-            case R.id.btn_ButterKnife:
+            case R.id.btn_ButterKnife1:
                 intent.setClass(this, ButterKnifeActivity.class);
                 startActivity(intent);
                 break;
 
+            case R.id.btn_ButterKnife2:
+                toast("好像Module Library中不能使用ButterKnife，因为id不是static final的，但是JackWharton在GitHub上有关于Library中的使用暂时没搞懂！求教求教");
+                break;
+
             case R.id.btn_AndroidAnnotation:
-                intent.setClass(this, ButterKnifeActivity.class);
+                intent.setClass(this, IndexActivity.class);
                 startActivity(intent);
                 break;
 

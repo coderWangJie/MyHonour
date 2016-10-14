@@ -19,9 +19,14 @@
             android:paddingRight="15dp">
 
             <Button
-                android:id="@+id/btn_ButterKnife"
+                android:id="@+id/btn_ButterKnife1"
                 style="@style/button_long"
-                android:text="编译时注解框架ButterKnife" />
+                android:text="app中使用编译时注解框架ButterKnife" />
+
+            <Button
+                android:id="@+id/btn_ButterKnife2"
+                style="@style/button_long"
+                android:text="Library中使用编译时注解框架ButterKnife" />
 
             <Button
                 android:id="@+id/btn_AndroidAnnotation"
