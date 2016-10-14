@@ -190,7 +190,8 @@ public abstract class BaseActivity extends Activity {
      */
     @Override
     public void onBackPressed() {
-        if (findViewById(R.id.area_titleLeft) != null) { // 有标题栏返回按钮时，Back键采用标题栏返回键响应
+        if (findViewById(R.id.area_titleLeft) != null
+                && findViewById(R.id.area_titleLeft).getVisibility() == View.VISIBLE) { // 有标题栏返回按钮时，Back键采用标题栏返回键响应
             findViewById(R.id.area_titleLeft).performClick();
         } else { // 无标题栏时，Back键默认返回
             setResult(AppConstant.resultCode_DEFAULT);

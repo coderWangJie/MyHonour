@@ -5,6 +5,7 @@ import android.view.View;
 
 import com.wj.myhonour.R;
 import com.wj.myhonour.basis.BaseActivity;
+import com.wj.myhonour.demo.developframe.FrameIndexActivity;
 import com.wj.myhonour.demo.marquee.MarQueeDemo;
 import com.wj.myhonour.info.UserInfo;
 
@@ -29,19 +30,21 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void initView() {
-            findViewById(R.id.btn_login).setOnClickListener(this);
+        findViewById(R.id.btn_login).setOnClickListener(this);
 
-            findViewById(R.id.btn_toast).setOnClickListener(this);
+        findViewById(R.id.btn_toast).setOnClickListener(this);
 
-            findViewById(R.id.btn_activity).setOnClickListener(this);
+        findViewById(R.id.btn_activity).setOnClickListener(this);
 
-            findViewById(R.id.btn_dialog).setOnClickListener(this);
+        findViewById(R.id.btn_dialog).setOnClickListener(this);
 
-            findViewById(R.id.btn_volley).setOnClickListener(this);
+        findViewById(R.id.btn_volley).setOnClickListener(this);
 
-            findViewById(R.id.btn_marquee).setOnClickListener(this);
+        findViewById(R.id.btn_marquee).setOnClickListener(this);
 
-            findViewById(R.id.btn_menu).setOnClickListener(this);
+        findViewById(R.id.btn_menu).setOnClickListener(this);
+
+        findViewById(R.id.btn_developFrame).setOnClickListener(this);
 
     }
 
@@ -49,7 +52,7 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_login:
-                if(UserInfo.isLogin()){
+                if (UserInfo.isLogin()) {
                     toast("已经登录了");
                 } else {
                     Intent intent = new Intent(this, LoginActivity.class);
@@ -74,6 +77,9 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
                 break;
             case R.id.btn_menu:
                 MenuDemoActivity.actionStart(this);
+                break;
+            case R.id.btn_developFrame:
+                FrameIndexActivity.actionStart(this);
                 break;
         }
     }

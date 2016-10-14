@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,21 +19,21 @@
             android:paddingRight="15dp">
 
             <Button
-                android:id="@+id/btn_login"
+                android:id="@+id/btn_ButterKnife"
                 style="@style/button_long"
-                android:text="登录" />
+                android:text="编译时注解框架ButterKnife" />
 
             <Button
-                android:id="@+id/btn_toast"
+                android:id="@+id/btn_AndroidAnnotation"
                 style="@style/button_long"
-                android:text="自定义单一Toast" />
+                android:text="AndroidAnnotation框架" />
 
             <Button
-                android:id="@+id/btn_activity"
+                android:id="@+id/btn_EventBus"
                 style="@style/button_long"
-                android:text="Go to ShaowActivity" />
+                android:text="EventBus机制" />
 
-            <Button
+            <!--<Button
                 android:id="@+id/btn_dialog"
                 style="@style/button_long"
                 android:text="Dialog Demo" />
@@ -52,12 +51,7 @@
             <Button
                 android:id="@+id/btn_menu"
                 style="@style/button_long"
-                android:text="Menu相关" />
-
-            <Button
-                android:id="@+id/btn_developFrame"
-                style="@style/button_long"
-                android:text="一些开发框架" />
+                android:text="Menu相关" />-->
         </LinearLayout>
     </ScrollView>
 
