@@ -1,10 +1,10 @@
-package com.wj.myhonour.demo.developframe;
+package com.wj.myhonour.demo.activity.developframe;
 
 import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
-import com.wangj.abouteventbus.scene2.MessageIndexActivity;
+import com.wangj.abouteventbus.EventBusMenu;
 import com.wangj.androidannotations.FirstActivity;
 import com.wj.myhonour.R;
 import com.wj.myhonour.basis.BaseActivity;
@@ -57,7 +57,7 @@ public class FrameIndexActivity extends BaseActivity implements View.OnClickList
                 break;
 
             case R.id.btn_EventBus:
-                intent.setClass(this, MessageIndexActivity.class);
+                intent.setClass(this, EventBusMenu.class);
                 startActivity(intent);
                 break;
         }

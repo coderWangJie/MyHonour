@@ -1,4 +1,4 @@
-package com.wj.myhonour.demo.marquee;
+package com.wj.myhonour.demo.activity.marquee;
 
 import android.content.Context;
 import android.content.Intent;

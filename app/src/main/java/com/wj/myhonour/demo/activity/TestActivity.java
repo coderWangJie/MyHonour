@@ -1,12 +1,12 @@
-package com.wj.myhonour.demo;
+package com.wj.myhonour.demo.activity;
 
 import android.content.Intent;
 import android.view.View;
 
 import com.wj.myhonour.R;
 import com.wj.myhonour.basis.BaseActivity;
-import com.wj.myhonour.demo.developframe.FrameIndexActivity;
-import com.wj.myhonour.demo.marquee.MarQueeDemo;
+import com.wj.myhonour.demo.activity.developframe.FrameIndexActivity;
+import com.wj.myhonour.demo.activity.marquee.MarQueeDemo;
 import com.wj.myhonour.info.UserInfo;
 
 public class TestActivity extends BaseActivity implements View.OnClickListener {
@@ -31,6 +31,8 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
     @Override
     public void initView() {
         findViewById(R.id.btn_login).setOnClickListener(this);
+
+        findViewById(R.id.btn_SysCall).setOnClickListener(this);
 
         findViewById(R.id.btn_toast).setOnClickListener(this);
 
@@ -59,6 +61,9 @@ public class TestActivity extends BaseActivity implements View.OnClickListener {
                     startActivity(intent);
                     overridePendingTransition(R.anim.activity_in_right, R.anim.activity_out_left);
                 }
+                break;
+            case R.id.btn_SysCall:
+                SystemCallActivity.actionStart(this);
                 break;
             case R.id.btn_toast:
                 toast("随机数：" + Math.random() * 10000);

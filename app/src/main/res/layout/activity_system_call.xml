@@ -20,49 +20,36 @@
             android:paddingRight="15dp">
 
             <Button
-                android:id="@+id/btn_login"
+                android:id="@+id/btn_SysCall1"
                 style="@style/button_long"
-                android:text="登录" />
+                android:text="调用系统电话(只打开拨号盘并带入特定号码)" />
 
             <Button
-                android:id="@+id/btn_SysCall"
+                android:id="@+id/btn_SysCall2"
                 style="@style/button_long"
-                android:text="系统功能调用" />
+                android:text="调用系统电话(直接拨出)" />
 
             <Button
-                android:id="@+id/btn_toast"
+                android:id="@+id/btn_Contract"
                 style="@style/button_long"
-                android:text="自定义单一Toast" />
+                android:text="系统通讯录" />
 
             <Button
-                android:id="@+id/btn_activity"
+                android:id="@+id/btn_Camera"
                 style="@style/button_long"
-                android:text="Go to ShaowActivity" />
+                android:text="系统拍照" />
 
             <Button
-                android:id="@+id/btn_dialog"
+                android:id="@+id/btn_Video"
                 style="@style/button_long"
-                android:text="Dialog Demo" />
+                android:text="系统录视频" />
 
             <Button
-                android:id="@+id/btn_volley"
+                android:id="@+id/btn_audio"
                 style="@style/button_long"
-                android:text="Volley Demo" />
+                android:text="系统录音频" />
 
-            <Button
-                android:id="@+id/btn_marquee"
-                style="@style/button_long"
-                android:text="跑马灯相关" />
 
-            <Button
-                android:id="@+id/btn_menu"
-                style="@style/button_long"
-                android:text="Menu相关" />
-
-            <Button
-                android:id="@+id/btn_developFrame"
-                style="@style/button_long"
-                android:text="一些开发框架" />
         </LinearLayout>
     </ScrollView>
 

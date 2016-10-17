@@ -1,4 +1,4 @@
-package com.wj.myhonour.demo;
+package com.wj.myhonour.demo.activity;
 
 import android.content.Intent;
 import android.view.View;

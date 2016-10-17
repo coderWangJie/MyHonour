@@ -45,7 +45,7 @@ public class MessageIndexActivity extends Activity {
     }
 
     /**
-     * 不知道为什么参数用Int类型不响应，也不报错
+     * TODO !!!!!!!!!!!!!!!!!!不知道为什么参数用Int类型不响应，也不报错!!!!!!!!!!!!
      * @param str
      */
     @Subscribe(threadMode = ThreadMode.MAIN)

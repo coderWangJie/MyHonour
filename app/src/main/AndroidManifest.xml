@@ -4,6 +4,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- 读写联系人 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+
+    <!-- 拨打电话权限，客户详情页直接拨打联系人电话 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
         android:name=".basis.MyHonourApplication"
         android:allowBackup="true"
@@ -12,13 +19,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".demo.TestActivity"
+            android:name=".demo.activity.TestActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar">
-
             <!-- android:theme="@style/Theme.AppCompat.Light.DarkActionBar"> -->
             <!-- 用这个theme按钮按下时有阴影效果,但是字母强制大写了！！！ -->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,46 +33,47 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".demo.LoginActivity"
+            android:name=".demo.activity.LoginActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
-            android:name=".demo.ShowActivity"
+            android:name=".demo.activity.ShowActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
-            android:name=".demo.DialogDemoActivity"
+            android:name=".demo.activity.DialogDemoActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
-            android:name=".demo.VolleyDemoActivity"
+            android:name=".demo.activity.VolleyDemoActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
-            android:name=".demo.marquee.MarQueeDemo"
+            android:name=".demo.activity.marquee.MarQueeDemo"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
-            android:name=".demo.marquee.MarqueeInListViewActivity"
+            android:name=".demo.activity.marquee.MarqueeInListViewActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
-            android:name=".demo.MenuDemoActivity"
+            android:name=".demo.activity.MenuDemoActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
         <activity
-            android:name=".demo.developframe.FrameIndexActivity"
+            android:name=".demo.activity.developframe.FrameIndexActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.Light.NoTitleBar" />
-        <activity android:name=".demo.developframe.ButterKnifeActivity"></activity>
+        <activity android:name=".demo.activity.developframe.ButterKnifeActivity" />
+        <activity android:name=".demo.activity.SystemCallActivity"/>
     </application>
 
 </manifest>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.wangj.abouteventbus.scene1.SceneRegisterActivity;
 import com.wangj.abouteventbus.scene2.MessageIndexActivity;
@@ -40,14 +41,14 @@ public class EventBusMenu extends Activity implements View.OnClickListener {
             intent.setClass(this, MessageIndexActivity.class);
             startActivity(intent);
 
-        } else if (id == R.id.btn_scene2) {
+        } else if (id == R.id.btn_scene3) {
+            Toast.makeText(EventBusMenu.this, "待完成", Toast.LENGTH_SHORT).show();
 
+        } else if (id == R.id.btn_scene4) {
+            Toast.makeText(EventBusMenu.this, "待完成", Toast.LENGTH_SHORT).show();
 
-        } else if (id == R.id.btn_scene2) {
-
-
-        } else if (id == R.id.btn_scene2) {
-
+        } else if (id == R.id.btn_scene5) {
+            Toast.makeText(EventBusMenu.this, "待完成", Toast.LENGTH_SHORT).show();
 
         }
     }

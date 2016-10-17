@@ -1,4 +1,4 @@
-package com.wj.myhonour.demo;
+package com.wj.myhonour.demo.activity;
 
 import android.content.Context;
 import android.content.Intent;
