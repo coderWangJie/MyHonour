@@ -7,7 +7,7 @@ import android.view.View;
 import com.wangj.abouteventbus.EventBusMenu;
 import com.wangj.androidannotations.FirstActivity;
 import com.wj.myhonour.R;
-import com.wj.myhonour.basis.BaseActivity;
+import com.wangj.baselibrary.basic.BaseActivity;
 
 public class FrameIndexActivity extends BaseActivity implements View.OnClickListener {
 

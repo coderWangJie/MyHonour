@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 
 import com.wj.myhonour.R;
-import com.wj.myhonour.basis.BaseActivity;
+import com.wangj.baselibrary.basic.BaseActivity;
 
 public class MenuDemoActivity extends BaseActivity {
 

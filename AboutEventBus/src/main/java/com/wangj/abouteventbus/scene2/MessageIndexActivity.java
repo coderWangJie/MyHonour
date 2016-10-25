@@ -1,33 +1,35 @@
 package com.wangj.abouteventbus.scene2;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.wangj.abouteventbus.R;
+import com.wangj.baselibrary.basic.BaseActivity;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
 
-public class MessageIndexActivity extends Activity {
+public class MessageIndexActivity extends BaseActivity {
 
     private int messageNum = 15;
     private TextView tvNumber;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_post);
-        EventBus.getDefault().register(this);
-
-        initView();
+    public int getContentViewId() {
+        return R.layout.activity_message_index;
     }
 
-    private void initView() {
+    @Override
+    public void setTitleBar() {
+        setTitleWithString("信息首页");
+    }
+
+    @Override
+    public void initView() {
+        EventBus.getDefault().register(this);
 
         tvNumber = (TextView) findViewById(R.id.tvNumber);
         tvNumber.setText(String.valueOf(messageNum));

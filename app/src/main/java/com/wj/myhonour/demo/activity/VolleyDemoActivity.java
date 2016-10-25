@@ -15,7 +15,7 @@ import com.android.volley.toolbox.ImageRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.wj.myhonour.R;
-import com.wj.myhonour.basis.BaseActivity;
+import com.wangj.baselibrary.basic.BaseActivity;
 import com.wj.myhonour.util.DialogUtil;
 
 public class VolleyDemoActivity extends BaseActivity implements View.OnClickListener {

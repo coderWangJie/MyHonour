@@ -1,15 +1,23 @@
 package com.wangj.abouteventbus.scene1;
 
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-
 import com.wangj.abouteventbus.R;
+import com.wangj.baselibrary.basic.BaseActivity;
 
-public class SceneRegisterActivity extends AppCompatActivity {
+public class SceneRegisterActivity extends BaseActivity{
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_scene_register);
+    public int getContentViewId() {
+        return R.layout.activity_scene_register;
     }
+
+    @Override
+    public void setTitleBar() {
+
+    }
+
+    @Override
+    public void initView() {
+
+    }
+
 }

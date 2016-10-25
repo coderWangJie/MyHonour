@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titlebar" />
+
+    <EditText
+        android:id="@+id/etReadNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b5d3dd"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:padding="5dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnRead"
+        style="@style/button_long"
+        android:text="阅读完成" />
+
+</LinearLayout>

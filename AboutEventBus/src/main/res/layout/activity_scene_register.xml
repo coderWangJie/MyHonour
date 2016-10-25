@@ -10,5 +10,4 @@
         android:textSize="18sp"
         android:lineSpacingExtra="5dp"
         android:text="\t\t注册页面，在注册页面填写了手机号、个人信息，传头像操作后，注册成功了，进入了主界面。此时我们需要在主界面关闭之前的注册的所有页面，此时就可以使用eventbus来通知前几个注册用的activity来关闭自己。这样的目的就是当注册失败时，用户按返回键还是能回到填写信息页。当注册成功后，按返回键就直接退出程序，不再保留注册填信息页了。"/>
-
 </LinearLayout>

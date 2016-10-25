@@ -30,9 +30,9 @@
                 android:text="系统功能调用" />
 
             <Button
-                android:id="@+id/btn_toast"
+                android:id="@+id/btn_widget"
                 style="@style/button_long"
-                android:text="自定义单一Toast" />
+                android:text="各种控件、自定义控件" />
 
             <Button
                 android:id="@+id/btn_activity"
@@ -40,19 +40,9 @@
                 android:text="Go to ShaowActivity" />
 
             <Button
-                android:id="@+id/btn_dialog"
-                style="@style/button_long"
-                android:text="Dialog Demo" />
-
-            <Button
                 android:id="@+id/btn_volley"
                 style="@style/button_long"
                 android:text="Volley Demo" />
-
-            <Button
-                android:id="@+id/btn_marquee"
-                style="@style/button_long"
-                android:text="跑马灯相关" />
 
             <Button
                 android:id="@+id/btn_menu"
@@ -63,6 +53,7 @@
                 android:id="@+id/btn_developFrame"
                 style="@style/button_long"
                 android:text="一些开发框架" />
+
         </LinearLayout>
     </ScrollView>
 

@@ -7,8 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
-    <!-- thid style is used for MyDialog with radius -->
+<!--
+    &lt;!&ndash; thid style is used for MyDialog with radius &ndash;&gt;
     <style name="MyDialogStyle" parent="@android:style/Theme.Dialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:windowIsFloating">true</item>
@@ -20,35 +20,36 @@
         <item name="android:backgroundDimAmount">0.5</item>
     </style>
 
-    <!-- layout 根布局 -->
+    &lt;!&ndash; layout 根布局 &ndash;&gt;
     <style name="layout_root">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">@drawable/aa</item>
-        <!--<item name="android:background">#F5F5F5</item>-->
+        &lt;!&ndash;<item name="android:background">#F5F5F5</item>&ndash;&gt;
     </style>
 
-    <!--  -->
+    &lt;!&ndash;  &ndash;&gt;
     <style name="layout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
     </style>
 
-    <!-- 水平分割线 -->
+    &lt;!&ndash; 水平分割线 &ndash;&gt;
     <style name="line_separate_horizontal">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0.5dp</item>
         <item name="android:background">#C1B9B9</item>
     </style>
 
-    <!-- 竖直分隔线 -->
+    &lt;!&ndash; 竖直分隔线 &ndash;&gt;
     <style name="line_separate_vertical">
         <item name="android:layout_width">0.5dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:background">#C1B9B9</item>
     </style>
 
-    <!--  -->
+    &lt;!&ndash;  &ndash;&gt;
     <style name="textview_common">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -57,7 +58,7 @@
         <item name="android:padding">10dp</item>
     </style>
 
-    <!--  -->
+    &lt;!&ndash;  &ndash;&gt;
     <style name="button_long">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -67,5 +68,15 @@
         <item name="android:layout_marginTop">15dp</item>
         <item name="android:textSize">16sp</item>
     </style>
+
+    &lt;!&ndash; 输入框 &ndash;&gt;
+    <style name="editText_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_radius</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>-->
 
 </resources>

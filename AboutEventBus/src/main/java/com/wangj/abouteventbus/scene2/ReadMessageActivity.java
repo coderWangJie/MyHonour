@@ -1,26 +1,28 @@
 package com.wangj.abouteventbus.scene2;
 
-import android.app.Activity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
 import com.wangj.abouteventbus.R;
+import com.wangj.baselibrary.basic.BaseActivity;
 
 import org.greenrobot.eventbus.EventBus;
 
-public class ReadMessageActivity extends Activity {
+public class ReadMessageActivity extends BaseActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_receiver);
-
-        initView();
+    public int getContentViewId() {
+        return R.layout.activity_read_message;
     }
 
-    private void initView() {
+    @Override
+    public void setTitleBar() {
+        setTitleWithString("信息详情");
+    }
+
+    @Override
+    public void initView() {
         final EditText etNum = (EditText) findViewById(R.id.etReadNum);
 
         Button btnRead = (Button) findViewById(R.id.btnRead);

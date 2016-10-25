@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/layout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="随便一点文字" />
+
+        <com.wangj.baselibrary.view.togglebutton.ToggleButton
+            android:id="@+id/toggle_toggle"
+            style="@style/myToggleButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="系统控件-开关" />
+
+        <Switch
+            android:id="@+id/switch_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <TextView
+            android:id="@+id/tv_otherSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="另一Activity Theme下的效果"
+            android:textColor="#587abd"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义-开关" />
+
+        <com.wangj.baselibrary.view.checkswitchbutton.CheckSwitchButton
+            android:id="@+id/switch_checkSwitchButton"
+            android:layout_width="30dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+</LinearLayout>

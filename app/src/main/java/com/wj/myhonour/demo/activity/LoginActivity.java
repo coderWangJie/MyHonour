@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.wj.myhonour.R;
-import com.wj.myhonour.basis.BaseActivity;
+import com.wangj.baselibrary.basic.BaseActivity;
 import com.wj.myhonour.info.UserInfo;
 
 /**
