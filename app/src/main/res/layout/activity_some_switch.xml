@@ -34,8 +34,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:textOff="OFF"
-            android:textOn="ON" />
+            android:textOff="关了"
+            android:textOn="开了" />
 
         <TextView
             android:id="@+id/tv_otherSwitch"

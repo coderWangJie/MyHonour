@@ -9,7 +9,7 @@ package com.wangj.baselibrary.constant;
 public class AppConstant {
 
     /** 是否激活"严苛模式" */
-    public static boolean STRUCT_MODE = true;
+    public static boolean STRUCT_MODE = false;
 
     public static int requestCode_DEFAULT = 101;
 

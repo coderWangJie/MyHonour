@@ -7,11 +7,12 @@
         </shape>
     </item>
 
-    <item android:state_pressed="true">
-        <shape>
+    <item android:state_pressed="true"
+        android:drawable="@drawable/xx">
+        <!--<shape>
             <corners android:topRightRadius="30dp"
                 android:bottomRightRadius="30dp"/>
             <solid android:color="#90dbda76" />
-        </shape>
+        </shape>-->
     </item>
 </selector>

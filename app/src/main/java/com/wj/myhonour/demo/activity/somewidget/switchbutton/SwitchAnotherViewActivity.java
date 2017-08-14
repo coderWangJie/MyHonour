@@ -8,16 +8,16 @@ import android.widget.Switch;
 import com.wangj.baselibrary.basic.BaseActivity;
 import com.wj.myhonour.R;
 
-public class SomeSwitchActivity2 extends BaseActivity {
+public class SwitchAnotherViewActivity extends BaseActivity {
 
     public static void actionStart(Context context) {
-        Intent intent = new Intent(context, SomeSwitchActivity2.class);
+        Intent intent = new Intent(context, SwitchAnotherViewActivity.class);
         context.startActivity(intent);
     }
 
     @Override
     public int getContentViewId() {
-        return R.layout.activity_some_switch2;
+        return R.layout.activity_switch_another_view;
     }
 
     @Override

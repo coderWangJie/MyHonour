@@ -11,21 +11,61 @@
     <!-- 拨打电话权限，客户详情页直接拨打联系人电话 -->
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Optional. Required for location feature -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
     <application
         android:name=".basis.MyHonourApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@android:style/Theme.Holo.Light.NoActionBar">
+
+        <!-- QQ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!--<data android:scheme="tencent1105708689" />-->
+                <data android:scheme="tencent1105708689" />
+            </intent-filter>
+        </activity>
+        <!-- QQ SDK_V2.0引入了AssistActivity，开发者需在androidManifest.xml中注册 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <activity
             android:name=".demo.activity.TestActivity"
             android:launchMode="singleTask"
-            android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar">
-
+            android:screenOrientation="portrait">
             <!-- android:theme="@style/Theme.AppCompat.Light.DarkActionBar"> -->
-            <!-- 用这个theme按钮按下时有阴影效果,但是字母强制大写了！！！ -->
+            <!-- 用这个theme按钮按下时有阴影效果,但是"按钮文字"字母强制大写了！！！ -->
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +77,7 @@
             android:name=".demo.activity.LoginActivity"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
         <activity
             android:name=".demo.activity.somewidget.WidgetIndexActivity"
             android:launchMode="singleTop"
@@ -73,9 +113,10 @@
         <activity android:name=".demo.activity.developframe.ButterKnifeActivity" />
         <activity android:name=".demo.activity.systemcall.SystemCallActivity" />
         <activity android:name=".demo.activity.systemcall.ContractCallActivity" />
-        <activity android:name=".demo.activity.somewidget.switchbutton.SomeSwitchActivity1"/>
-        <activity android:name=".demo.activity.somewidget.switchbutton.SomeSwitchActivity2"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar"/>
+        <activity android:name=".demo.activity.somewidget.switchbutton.SomeSwitchActivity" />
+        <activity
+            android:name=".demo.activity.somewidget.switchbutton.SwitchAnotherViewActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

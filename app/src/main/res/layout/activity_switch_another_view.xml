@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="系统控件-开关" />
+            android:text="系统控件-Switch" />
 
         <Switch
             android:id="@+id/switch_switch"
@@ -22,4 +22,5 @@
             android:textOff="关了"
             android:textOn="开了" />
     </LinearLayout>
+
 </LinearLayout>

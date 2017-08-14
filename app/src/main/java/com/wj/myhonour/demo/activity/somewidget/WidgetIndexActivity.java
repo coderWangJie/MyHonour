@@ -6,8 +6,8 @@ import android.view.View;
 
 import com.wangj.baselibrary.basic.BaseActivity;
 import com.wj.myhonour.R;
-import com.wj.myhonour.demo.activity.somewidget.switchbutton.SomeSwitchActivity1;
 import com.wj.myhonour.demo.activity.somewidget.marquee.MarQueeDemo;
+import com.wj.myhonour.demo.activity.somewidget.switchbutton.SomeSwitchActivity;
 
 public class WidgetIndexActivity extends BaseActivity implements View.OnClickListener {
 
@@ -52,7 +52,7 @@ public class WidgetIndexActivity extends BaseActivity implements View.OnClickLis
                 MarQueeDemo.actionStart(this);
                 break;
             case R.id.btn_someSwitch:
-                SomeSwitchActivity1.actionStart(this);
+                SomeSwitchActivity.actionStart(this);
                 break;
         }
     }

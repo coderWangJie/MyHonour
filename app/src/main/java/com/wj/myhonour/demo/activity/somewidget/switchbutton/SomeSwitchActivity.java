@@ -11,16 +11,16 @@ import com.wangj.baselibrary.view.checkswitchbutton.CheckSwitchButton;
 import com.wangj.baselibrary.view.togglebutton.ToggleButton;
 import com.wj.myhonour.R;
 
-public class SomeSwitchActivity1 extends BaseActivity implements View.OnClickListener {
+public class SomeSwitchActivity extends BaseActivity implements View.OnClickListener {
 
     public static void actionStart(Context context) {
-        Intent intent = new Intent(context, SomeSwitchActivity1.class);
+        Intent intent = new Intent(context, SomeSwitchActivity.class);
         context.startActivity(intent);
     }
 
     @Override
     public int getContentViewId() {
-        return R.layout.activity_some_switch1;
+        return R.layout.activity_some_switch;
     }
 
     @Override
@@ -72,7 +72,7 @@ public class SomeSwitchActivity1 extends BaseActivity implements View.OnClickLis
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tv_otherSwitch:
-                SomeSwitchActivity2.actionStart(this);
+                SwitchAnotherViewActivity.actionStart(this);
                 break;
         }
     }
