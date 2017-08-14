@@ -40,7 +40,6 @@ public class MessageIndexActivity extends BaseActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MessageIndexActivity.this,
                         ReadMessageActivity.class);
-
                 startActivity(intent);
             }
         });
